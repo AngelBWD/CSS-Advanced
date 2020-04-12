@@ -5,6 +5,16 @@
 
     ul li {
         display: inline-block;
+
+        .loaded & {
+            opacity: 1;
+            transform: translate(0, 0);
+        }
+
+        @for $i from 1 through 5 {
+            &:nth-child(#{$i}) { transition-delay:  $i * 0.1s; }
+        }
+
     }
 
     a {
@@ -28,10 +38,6 @@
         }
     }
 
-
-
-
-
     li.page-title-about a:before {
         content: '\f47f';
     }
@@ -50,27 +56,6 @@ nav ul li {
     transition: opacity 0.3s ease-in, transform 0.3s ease-in;
 }
 
-nav ul li:nth-child(1) {
-    transition-delay: 0.4s;
-}
 
-nav ul li:nth-child(2) {
-    transition-delay: 0.3s;
-}
 
-nav ul li:nth-child(3) {
-    transition-delay: 0.2s;
-}
 
-nav ul li:nth-child(4) {
-    transition-delay: 0.1s;
-}
-
-nav ul li:nth-child(5) {
-    transition-delay: 0.0s;
-}
-
-.loaded nav ul li {
-    opacity: 1;
-    transform: translate(0, 0);
-}
