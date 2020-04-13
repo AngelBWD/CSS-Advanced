@@ -2,20 +2,35 @@
     text-align: right;
     padding-top: 0.5em;
 
-
-    ul li {
-        display: inline-block;
-
-        .loaded & {
-            opacity: 1;
-            transform: translate(0, 0);
-        }
-
-        @for $i from 1 through 5 {
-            &:nth-child(#{$i}) { transition-delay:  $i * 0.1s; }
-        }
-
+    @include bp(mobile) {
+        display: none;
     }
+
+    ul {
+        padding: 0;
+        margin: 0;
+        
+        @include bp(desktop) {
+            display: flex;
+        }
+        
+        li {
+        
+            display: block;
+    
+            .loaded & {
+                opacity: 1;
+                transform: translate(0, 0);
+            }
+    
+            @for $i from 1 through 5 {
+                &:nth-child(#{$i}) { transition-delay:  $i * 0.1s; }
+            }
+    
+        }
+    }
+
+     
 
     a {
         display: flex;
@@ -56,6 +71,25 @@ nav ul li {
     transition: opacity 0.3s ease-in, transform 0.3s ease-in;
 }
 
+.nav-toggle {
+    position: absolute;
+    pointer-events: none;
+    opacity: 0;
+
+    &:checked + .site .site-header .nav {
+        @include bp(mobile){
+            display: block;
+        }
+    }
+
+    &-label {
+
+        @include bp(desktop){
+            display: none;
+        }
+
+    }
+}
 
 
 
