@@ -6,14 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
         
-            CSS Advanced
+        CSS Advanced
         
 
     </title>
-    
+
 
     <link rel="stylesheet" href="/css/site.css">
     <link rel="stylesheet" href='/fontawesome/css/all.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script>
         window.addEventListener('load', event => {
             document.querySelector('body').classList.add('loaded')
@@ -23,21 +24,22 @@
 
 <body class="page-home">
 
-    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <input type="checkbox" id="site-nav-toggle" class="site-nav-toggle">
 
     <div class="site">
 
 
         <header class="site-header">
-            <div class="site-wrapper">
-            <div class="site-branding">
-                <h1><a href="/">CSS Advanced</a></h1>
-                <p>Hi there!</p>
-            </div>
-           
-          <label for="nav-toggle" class="nav-toggle-label">Menu</label>
 
-<nav class="nav location-header">
+            <div class="site-wrapper">
+                <div class="site-branding">
+                    <h1 class="site-title"><a href="/">CSS Advanced</a></h1>
+                    <p>Hi there!</p>
+                </div>
+
+                <label for="site-nav-toggle" class="nav-toggle-label">Menu</label>
+
+<nav class="site-nav location-header">
     <ul>
         
         
@@ -85,77 +87,117 @@
 
     
 </nav>
-        </div>
+            </div>
+
         </header>
 
-        <main class="site-main">
-            <h1>Home</h1>
-            Home there..
 
-<img src="/images/banner.jpg" alt="">
+
+        <section class="site-media"
+            style="background-image: url('https://images.unsplash.com/photo-1546955122-7293368178bf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1920&q=80')">
+
+            <div class="site-wrapper">
+                <h2>Modern architecture has something for everyone. </h2>
+                <p>Build Design is a 3D photorealistic visualizations studio. We specialize in interior and exterior
+                    architectural visualizations, as well as product modelling and comprehensive product branding. </p>
+                
+                    <ul class="social">
+                        <li>
+                            <a href="#"><i class="fa fa-facebook-f"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-linkedin"></i></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                        </li>
+                    </ul>
+            </div>
+
+        </section>
+
+
+
+        <main class="site-content">
+
+            <div class="site-wrapper">
+                <article class="entry">
+    <div class="entry-media">
+        <img src="https://www.arch2o.com/wp-content/uploads/2017/06/ARCH2O-Chongqing-Central-Park-Life-Experience-Center-gad-10.jpg" alt="">
+    </div>
+    <div class="entry-content">
+        <h3 class="entry-title">
+            <a href="#">Architecture</a>
+        </h3>
+
+        <p>Our mission is to develop neoteric concepts in architecture and urbanism which reflect the characteristics of contemporary society. </p>
+    </div>
+</article>
+
+<article class="entry">
+    <div class="entry-media">
+        <img src="https://images.unsplash.com/photo-1516455590571-18256e5bb9ff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80" alt="">
+    </div>
+    <div class="entry-content">
+        <h3 class="entry-title">
+            Interior Design Projects
+        </h3>
+
+        <p>Trust us and we can guarantee that the style of Build Design will provide you exactly what you are looking for to the last detail.</p>
+    </div>
+</article>
+
+<article class="entry">
+    <div class="entry-media">
+        <img src="https://brickvisual.com/wp-content/uploads/2020/01/public2599_cam-01_PROFILE_web-1920x1080.jpg" alt="">
+    </div>
+    <div class="entry-content">
+        <h3 class="entry-title">
+            <a href="#">Architectural Visualizations</a>
+        </h3>
+
+        <p>We believe that with our experience, competence and knowledge, we aim to create high quality photo-realistic images and raise Your ideas into new level and heights.</p>
+    </div>
+</article>
+            </div>
 
         </main>
 
         <footer class="site-footer">
 
-            <label for="nav-toggle" class="nav-toggle-label">Menu</label>
+            <div class="site-wrapper">
 
-<nav class="nav location-footer">
-    <ul>
-        
-        
-            
-        
-            
-        
-            
-            <li class="page-title-home current-page">
-                <a href="/">Home</a>
-            </li>
-            
-        
-            
-            <li class="page-title-about">
-                <a href="/about/">About</a>
-            </li>
-            
-        
-            
-            <li class="page-title-services">
-                <a href="/services/">Services</a>
-            </li>
-            
-        
-            
-            <li class="page-title-contacts">
-                <a href="/contacts/">Contacts</a>
-            </li>
-            
-        
-            
-            <li class="page-title-gallery">
-                <a href="/gallery/">Gallery</a>
-            </li>
-            
-        
-            
-            <li class="page-title-grid">
-                <a href="/grid/">Grid</a>
-            </li>
-            
-        
-    </ul>
+                <div class="info">
 
-    
-</nav>
+                    <p>CSS Advanced</p>
+                    <p>Modern architecture has something for everyone.</p>
+                    <p> &copy 2020 Build Design</p>
+                </div>
 
-            <p> CSS Advanced &copy; All rights reserved</p>
+                <ul class="social">
+                    <li>
+                        <a href="#"><i class="fa fa-facebook-f"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-linkedin"></i></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                    </li>
+                </ul>
 
+            </div>
         </footer>
 
     </div>
 
-    
+
 
 </body>
 

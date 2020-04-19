@@ -6,14 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
         
-            About - CSS Advanced
+        About - CSS Advanced
         
 
     </title>
-    
+
 
     <link rel="stylesheet" href="/css/site.css">
     <link rel="stylesheet" href='/fontawesome/css/all.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script>
         window.addEventListener('load', event => {
             document.querySelector('body').classList.add('loaded')
@@ -23,21 +24,22 @@
 
 <body class="page-about">
 
-    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <input type="checkbox" id="site-nav-toggle" class="site-nav-toggle">
 
     <div class="site">
 
 
         <header class="site-header">
-            <div class="site-wrapper">
-            <div class="site-branding">
-                <h1><a href="/">CSS Advanced</a></h1>
-                <p>Hi there!</p>
-            </div>
-           
-          <label for="nav-toggle" class="nav-toggle-label">Menu</label>
 
-<nav class="nav location-header">
+            <div class="site-wrapper">
+                <div class="site-branding">
+                    <h1 class="site-title"><a href="/">CSS Advanced</a></h1>
+                    <p>Hi there!</p>
+                </div>
+
+                <label for="site-nav-toggle" class="nav-toggle-label">Menu</label>
+
+<nav class="site-nav location-header">
     <ul>
         
         
@@ -85,12 +87,44 @@
 
     
 </nav>
-        </div>
+            </div>
+
         </header>
 
-        <main class="site-main">
-            <h1>About</h1>
-            <input type="checkbox" name="card_id_1_more" id="card_id_1_more">
+
+
+        <section class="site-media"
+            style="background-image: url('https://images.unsplash.com/photo-1546955122-7293368178bf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1920&q=80')">
+
+            <div class="site-wrapper">
+                <h2>Modern architecture has something for everyone. </h2>
+                <p>Build Design is a 3D photorealistic visualizations studio. We specialize in interior and exterior
+                    architectural visualizations, as well as product modelling and comprehensive product branding. </p>
+                
+                    <ul class="social">
+                        <li>
+                            <a href="#"><i class="fa fa-facebook-f"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-linkedin"></i></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                        </li>
+                    </ul>
+            </div>
+
+        </section>
+
+
+
+        <main class="site-content">
+
+            <div class="site-wrapper">
+                <input type="checkbox" name="card_id_1_more" id="card_id_1_more">
 <section class="card">
 
     <h3>Title</h3>
@@ -107,69 +141,42 @@
         <span class="less">Less</span>
     </label>
 </section>
+            </div>
 
         </main>
 
         <footer class="site-footer">
 
-            <label for="nav-toggle" class="nav-toggle-label">Menu</label>
+            <div class="site-wrapper">
 
-<nav class="nav location-footer">
-    <ul>
-        
-        
-            
-        
-            
-        
-            
-            <li class="page-title-home">
-                <a href="/">Home</a>
-            </li>
-            
-        
-            
-            <li class="page-title-about current-page">
-                <a href="/about/">About</a>
-            </li>
-            
-        
-            
-            <li class="page-title-services">
-                <a href="/services/">Services</a>
-            </li>
-            
-        
-            
-            <li class="page-title-contacts">
-                <a href="/contacts/">Contacts</a>
-            </li>
-            
-        
-            
-            <li class="page-title-gallery">
-                <a href="/gallery/">Gallery</a>
-            </li>
-            
-        
-            
-            <li class="page-title-grid">
-                <a href="/grid/">Grid</a>
-            </li>
-            
-        
-    </ul>
+                <div class="info">
 
-    
-</nav>
+                    <p>CSS Advanced</p>
+                    <p>Modern architecture has something for everyone.</p>
+                    <p> &copy 2020 Build Design</p>
+                </div>
 
-            <p> CSS Advanced &copy; All rights reserved</p>
+                <ul class="social">
+                    <li>
+                        <a href="#"><i class="fa fa-facebook-f"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-linkedin"></i></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                    </li>
+                </ul>
 
+            </div>
         </footer>
 
     </div>
 
-    
+
 
 </body>
 
