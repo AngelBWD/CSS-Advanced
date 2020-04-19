@@ -1,4 +1,4 @@
-.nav {
+.site-nav {
     text-align: right;
     padding-top: 0.5em;
 
@@ -23,7 +23,7 @@
                 transform: translate(0, 0);
             }
     
-            @for $i from 1 through 5 {
+            @for $i from 1 through 7 {
                 &:nth-child(#{$i}) { transition-delay:  $i * 0.1s; }
             }
     
@@ -46,7 +46,7 @@
             font-weight: 900;
         }
 
-        @at-root .nav .current-page a,
+        @at-root .site-nav .current-page a,
         &:hover {
             background: #090;
             color: #fff;
@@ -62,7 +62,7 @@
     }
 }
 
-nav ul li {
+.site-nav ul li {
     display: block;
     list-style: none outside;
     padding: 0 0.5em;
@@ -71,12 +71,12 @@ nav ul li {
     transition: opacity 0.3s ease-in, transform 0.3s ease-in;
 }
 
-.nav-toggle {
+.site-nav-toggle {
     position: absolute;
     pointer-events: none;
     opacity: 0;
 
-    &:checked + .site .site-header .nav {
+    &:checked + .site .site-header .site-nav {
         @include bp(mobile){
             display: block;
         }

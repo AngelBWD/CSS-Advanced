@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
         {% if page.title != 'Home' %}
-            {{ page.title}} - {{ site.title }}
+        {{ page.title}} - {{ site.title }}
         {% else %}
-            {{ site.title }}
+        {{ site.title }}
         {% endif %}
 
     </title>
-    
+
 
     <link rel="stylesheet" href="{{ site.baseurl }}/css/site.css">
     <link rel="stylesheet" href='{{ site.baseurl }}/fontawesome/css/all.css'>
@@ -32,57 +32,28 @@
 
 
         <header class="site-header">
+
             <div class="site-wrapper">
                 <div class="site-branding">
                     <h1 class="site-title"><a href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
                     <p>{{ site.description }}</p>
                 </div>
-           
+
                 {% include navigation.html location="header" %}
             </div>
+
         </header>
 
-        <section class="site-media" style="background-image: url('https://images.unsplash.com/photo-1546955122-7293368178bf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1920&q=80')">
-                
+
+
+        <section class="site-media"
+            style="background-image: url('https://images.unsplash.com/photo-1546955122-7293368178bf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1920&q=80')">
+
             <div class="site-wrapper">
                 <h2>Modern architecture has something for everyone. </h2>
-                <p>Build Design is a 3D photorealistic visualizations studio. We specialize in interior and exterior architectural visualizations, as well as product modelling and comprehensive product branding. </p>
-                <ul class="social">
-                    <li>
-                        <a href="#"><i class="fa fa-facebook-f"></i></a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa fa-twitter"></i></a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa fa-linkedin"></i></i></a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa fa-instagram"></i></a>
-                    </li>
-                </ul>
-            </div>
-           
-        </section>
-
-        <main class="site-content">
-
-            <div class="site-wrapper">
-                {{ content }}
-            </div>
-            
-        </main>
-
-        <footer class="site-footer">
-
-            <div class="site-wrapper">
-
-                 <div class="info">
-
-                    <p>{{ site.title }}</p>
-                    <p>Modern architecture has something for everyone.</p>
-                    <p> &copy 2020 Build Design</p>
-
+                <p>Build Design is a 3D photorealistic visualizations studio. We specialize in interior and exterior
+                    architectural visualizations, as well as product modelling and comprehensive product branding. </p>
+                
                     <ul class="social">
                         <li>
                             <a href="#"><i class="fa fa-facebook-f"></i></a>
@@ -97,15 +68,52 @@
                             <a href="#"><i class="fa fa-instagram"></i></a>
                         </li>
                     </ul>
+            </div>
 
+        </section>
+
+
+
+        <main class="site-content">
+
+            <div class="site-wrapper">
+                {{ content }}
+            </div>
+
+        </main>
+
+        <footer class="site-footer">
+
+            <div class="site-wrapper">
+
+                <div class="info">
+
+                    <p>{{ site.title }}</p>
+                    <p>Modern architecture has something for everyone.</p>
+                    <p> &copy 2020 Build Design</p>
                 </div>
+
+                <ul class="social">
+                    <li>
+                        <a href="#"><i class="fa fa-facebook-f"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-linkedin"></i></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                    </li>
+                </ul>
 
             </div>
         </footer>
 
     </div>
 
-    
+
 
 </body>
 
