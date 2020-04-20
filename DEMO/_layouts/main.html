@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        {% if page.title != 'Home' %}
+        {{ page.title}} - {{ site.title }}
+        {% else %}
+        {{ site.title }}
+        {% endif %}
+
+    </title>
+
+
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/site.css">
+    <link rel="stylesheet" href='{{ site.baseurl }}/fontawesome/css/all.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+        window.addEventListener('load', event => {
+            document.querySelector('body').classList.add('loaded')
+        });
+    </script>
+</head>
+
+<body class="page-{{ page.title | slugify }}">
+
+    <input type="checkbox" id="site-nav-toggle" class="site-nav-toggle">
+
+    <div class="site">
+
+
+        <header class="site-header">
+
+            <div class="site-wrapper">
+                <div class="site-branding">
+                    <h1 class="site-title"><a href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
+                    <p>{{ site.description }}</p>
+                </div>
+
+                {% include navigation.html location="header" %}
+            </div>
+
+        </header>
+
+
+
+        <section class="site-media"
+            style="background-image: url('{{ page.featured_image}}')">
+
+            <div class="site-wrapper">
+                <h2>Modern architecture has something for everyone. </h2>
+                <p>Build Design is a 3D photorealistic visualizations studio. We specialize in interior and exterior
+                    architectural visualizations, as well as product modelling and comprehensive product branding. </p>
+                
+                    <ul class="social">
+                        <li>
+                            <a href="#"><i class="fa fa-facebook-f"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-linkedin"></i></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                        </li>
+                    </ul>
+            </div>
+
+        </section>
+
+
+
+        <main class="site-content">
+
+            <div class="site-wrapper">
+                {{ content }}
+            </div>
+
+        </main>
+
+        <footer class="site-footer">
+
+            <div class="site-wrapper">
+
+                <div class="info">
+
+                    <p>{{ site.title }}</p>
+                    <p>Modern architecture has something for everyone.</p>
+                    <p> &copy 2020 Build Design</p>
+                </div>
+
+                <ul class="social">
+                    <li>
+                        <a href="#"><i class="fa fa-facebook-f"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-linkedin"></i></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                    </li>
+                </ul>
+
+            </div>
+        </footer>
+
+    </div>
+
+
+
+</body>
+
+</html>
