@@ -3,10 +3,14 @@
     z-index: 2000;
 
     .site-wrapper {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 2em 0;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+
+        @include bp(desktop){
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
     }
 }
 
@@ -16,7 +20,7 @@
 }
 
 .site-media {
-    height: 60vh;
+    min-height: 60vh;
     overflow: hidden;
     background-position: center;
     background-size: cover;

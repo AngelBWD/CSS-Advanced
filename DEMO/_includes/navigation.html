@@ -9,22 +9,11 @@
             class="page-title-{{ current_page.title | slugify }}{% if current_page.url == page.url %} current-page{% endif%}">
             <a href="{{ site.baseurl }}{{ current_page.url }}">{{ current_page.title }}</a>
 
-            {% if current_page.title == 'Services' %}
+            {% if current_page.title == 'Projects' %}
             <ul>
-                <li><a href="#">Cloud</a></li>
-                <li><a href="#">Management</a></li>
-                <li>
-                    <a href="#">Software</a>
-                    <ul>
-                        <li><a href="#">Cloud</a></li>
-                        <li><a href="#">Management</a></li>
-                        <li>
-                            <a href="#">Software</a>
-                        </li>
-                        <li><a href="#">Slack</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Slack</a></li>
+                <li><a href="#">Architecture</a></li>
+                <li><a href="#">Interior Design Projects</a></li>
+                <li><a href="#">Architectural Visualizations</a></li>
             </ul>
             {% endif %}
 

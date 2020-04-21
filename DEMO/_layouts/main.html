@@ -44,33 +44,37 @@
 
         </header>
 
-
-
+        {% if page.fancy_gallery != 1 %}
         <section class="site-media"
             style="background-image: url('{{ page.featured_image}}')">
 
             <div class="site-wrapper">
-                <h2>Modern architecture has something for everyone. </h2>
-                <p>Build Design is a 3D photorealistic visualizations studio. We specialize in interior and exterior
-                    architectural visualizations, as well as product modelling and comprehensive product branding. </p>
-                
+                {% if page.fancy_title %}
+                <h2>{{page.fancy_title}}</h2>
+                {% endif %}
+                {% if page.fancy_description %}
+                <p>{{page.fancy_description}} </p>
+                {% endif %}
+                {% if page.fancy_social == 1 %}
                     <ul class="social">
                         <li>
-                            <a href="#"><i class="fa fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa fa-facebook-f" target="_blank"></i></a>
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-twitter" target="_blank"></i></a>
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-linkedin"></i></i></a>
+                            <a href="#"><i class="fa fa-linkedin" target="_blank"></i></i></a>
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-instagram"></i></a>
+                            <a href="https://www.instagram.com/build_design_3d/" target="_blank"><i class="fa fa-instagram"></i></a>
                         </li>
                     </ul>
+                {% endif %}
             </div>
 
         </section>
+        {% endif %}
 
 
 
@@ -95,16 +99,16 @@
 
                 <ul class="social">
                     <li>
-                        <a href="#"><i class="fa fa-facebook-f"></i></a>
+                        <a href="#" target="_blank"><i class="fa fa-facebook-f"></i></a>
                     </li>
                     <li>
-                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
                     </li>
                     <li>
-                        <a href="#"><i class="fa fa-linkedin"></i></i></a>
+                        <a href="#" target="_blank"><i class="fa fa-linkedin"></i></i></a>
                     </li>
                     <li>
-                        <a href="#"><i class="fa fa-instagram"></i></a>
+                        <a href="https://www.instagram.com/build_design_3d/" target="_blank"><i class="fa fa-instagram"></i></a>
                     </li>
                 </ul>
 
