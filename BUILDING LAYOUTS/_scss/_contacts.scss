@@ -1,3 +1,77 @@
 .map {
-  border: dashed black 2px;
+  display: flex;
+  justify-content: space-between;
+  padding: 3em 15em 0 15em;
+  align-items: center;
+
+  iframe {
+    border-radius: 25em;
+
+  }
 }
+
+.contacts {
+  font-weight: 500;
+}
+
+@include bp(mobile) {
+  .map {
+    display: block;
+    text-align: center;
+    padding: 2em 1em;
+
+
+    iframe {
+      width: 200px;
+      height: 200px;
+    }
+  }
+}
+
+
+.mail {
+  display: flex;
+  justify-content: space-between;
+  padding: 3em 15em 0 15em;
+  align-items: center;
+
+  @include bp(desktop) {
+    .second {
+      padding-right: 1.5em;
+    }
+  }
+}
+
+@include bp(mobile) {
+  .mail,
+  .phone {
+    display: block;
+    text-align: center;
+    padding: 2em 1em;
+  }
+}
+
+.phone {
+  display: flex;
+  justify-content: space-between;
+  padding: 3em 15em 3em 15em;
+  align-items: center;
+
+  @include bp(desktop) {
+    .second {
+      padding-right: 2.5em;
+    }
+  }
+}
+
+@include bp(mobile) {
+  .phone {
+    display: block;
+    text-align: center;
+    padding: 2em 1em;
+  }
+}
+
+
+
+

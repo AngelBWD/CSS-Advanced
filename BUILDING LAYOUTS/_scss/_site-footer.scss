@@ -4,11 +4,15 @@
     justify-content: space-between;
     align-items: center;
     font-size: 1.2em;
+
+    @include bp(mobile) {
+        padding: 2rem;
+    }
 }
 
 .site-footer .social a {
     background: rgba(0, 0, 0, 0.3);
-    color: #fff;
+    color: #000;
 }
 
 .site-footer .site-wrapper p {

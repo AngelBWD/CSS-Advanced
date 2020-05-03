@@ -1,15 +1,85 @@
-.page-about {
-    background: white
+.page-projects {
+    .site-media h2 {
+        font-weight: 500;
+        opacity: 1;
+        font-size: 2.2em;
+        text-align: center;
+    } 
+
+    .entry-content .entry-title a:hover {
+        color: #369;
+    }
 }
 
 .page-home {
-    background: white
-}
+    .site-media {
+        height: 75vh;
+        h2 {
+            text-align: left;
+        }
+    }
 
-.page-services {
-    background: white;
+    @include bp(mobile) {
+        .site-media .site-wrapper {
+            padding-bottom: -6rem;
+        }
+
+        .site-media .site-wrapper p{
+            padding-bottom: -2rem;
+        }
+    }
+    
+
+    .site-media .site-wrapper {
+        padding-bottom: 6rem;
+    }
+
+    .site-media .site-wrapper p{
+        padding-bottom: 2rem;
+    }
 }
 
 .page-contacts {
-    background: white
+    .site-media {
+        height: 40vh;
+        text-align: center;
+    }
+
+    @include bp(mobile) {
+
+        .site-wrapper .cont {
+            justify-content: center;
+            font-size: 40px;
+            padding-top: 10px;
+            color: white;
+        }
+    
+        .site-media .site-wrapper h2 {
+            margin-top: -9em;
+        }
+    }
+
+    .site-wrapper .cont {
+        justify-content: center;
+        font-size: 40px;
+        padding-top: 10px;
+        color: white;
+        padding-left: 1em;
+    }
+
+    .site-media .site-wrapper h2 {
+        margin-top: -3em;
+    }
+
+    .site-media .site-wrapper {
+        padding-bottom: 3rem;
+    }
+
+    @include bp(mobile) {
+        .site-media .site-wrapper h2 {
+            margin-top: -3em;
+        }
+    }
+    
 }
+
