@@ -3,9 +3,8 @@
 @import url(./partials/_globle.css);
 
 /* start navigation */
-
 .header_area .main-menu .navbar .navbar-brand {
-    padding: 0 2rem 0 5rem;
+    padding: 0 2rem 0 0rem;
 }
 
 .header_area .main-menu .navbar {
@@ -32,16 +31,9 @@
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
-
 /* end navigation */
 
 /* start banner area */
-
-.site-main .site-banner {
-    background: url(../img/banner/home-banner.png) no-repeat 0% 50%;
-    background-position: 0% 50%;
-}
-
 .site-main .site-banner .site-title h3 {
     padding-top: 35%;
     font-weight: 500;
@@ -69,7 +61,25 @@
     padding: 7rem 0;
     width: 90rem;
 }
-
-
-
 /* end banner area */
+
+/* start about area */
+.site-main .about-area {
+    padding: 8rem 5rem;
+}
+
+.site-main .about-area .about-title h2>span {
+    display: block;
+    font: normal bold 49px/60px var(--roboto); 
+    letter-spacing: 15px;
+}
+
+.site-main .about-area .about-title .paragraph>p {
+    padding: .2rem 0;
+}
+
+p.para {
+    color: var(--text-color);
+    font: normal 500 16px/25px var(--roboto); 
+}
+/* end about area */
