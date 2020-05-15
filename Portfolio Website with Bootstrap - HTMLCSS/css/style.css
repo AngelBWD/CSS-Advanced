@@ -78,10 +78,6 @@
     padding: .2rem 0;
 }
 
-p.para {
-    color: var(--text-color);
-    font: normal 500 16px/25px var(--roboto); 
-}
 /* end about area */
 
 /* start project area */
@@ -104,12 +100,25 @@ p.para {
     font: normal 700 25px/12px var(--roboto);
 }
 
-button:focus,
-button:active,
-button:hover
-.btn:active
-.btn:active {
-    outline: 0px !important;
-    box-shadow: none !important;
+.site-main .project-area .grid .our-project .img a:hover img {
+    filter: brightness(1.2) drop-shadow(1px 8px 30px #b1afaf);
 }
+
 /* end project area */
+
+/* start footer area */
+footer .footer-area {
+    padding: 5rem 0;
+    background: url(../img/footer-bg.png) no-repeat;
+}
+
+footer .footer-area .social h5 {
+    font: normal 500 23px/30px var(--roboto);
+}
+
+footer.footer-area .social a > i{
+    font-size:22px;
+    padding: 2rem;
+    color: var(--border-color);
+}
+/* start footer area */ 

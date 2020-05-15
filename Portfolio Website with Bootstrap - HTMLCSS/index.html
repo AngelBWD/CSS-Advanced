@@ -32,12 +32,6 @@
                             <a class="nav-link" href="#">portfolio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">pages</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">blog</a>
-                        </li>
-                        <li class="nav-item">
                             <a class="nav-link" href="#">contact</a>
                         </li>
 
@@ -110,14 +104,46 @@
                         </div>
 
                         <div class="button-group">
-                            <button type="button" class="active">All</button>
-                            <button type="button">Latest</button>
-                            <button type="button">Upcoming</button>
+                            <button type="button" id="btn1" class="active">All</button>
+                            <button type="button" data-filter=".latest">Latest</button>
+                            <button type="button" data-filter=".upcoming">Upcoming</button>
                         </div>
 
                         <div class="row grid">
                             <div class="col-lg-4 col-md-6 col-sm-12 element-item latest">
-                                <div class="our-project"></div>
+                                <div class="our-project">
+                                    <div class="img">
+                                        <a href="https://angelbwd.github.io/Build_Design_AMG/" target="_blank"><img src="./img/portfolio/BD.PNG" width="370" height="320" alt="project1"></a>
+                                    </div>
+                                    <div class="title py-4">
+                                        <h4 class="text-uppercase">Build Design</h4>
+                                        <span class="text-secondary">Latest,Portfolio</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6 col-sm-12 element-item latest">
+                                <div class="our-project">
+                                    <div class="img">
+                                        <a href="#" target="_blank"><img src="./img/portfolio/project-2.jpg" width="370" height="320" alt="project2"></a>
+                                    </div>
+                                    <div class="title py-4">
+                                        <h4 class="text-uppercase">Other Project</h4>
+                                        <span class="text-secondary">Upcoming,Portfolio</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6 col-sm-12 element-item upcoming">
+                                <div class="our-project">
+                                    <div class="img">
+                                        <img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=752&q=80" width="370" height="320" alt="project2">
+                                    </div>
+                                    <div class="title py-4">
+                                        <h4 class="text-uppercase">Site</h4>
+                                        <span class="text-secondary">Upcoming,Portfolio</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -126,7 +152,32 @@
         </main>
     <!-- End Main Area -->
 
+    <footer class="footer-area">
+        <div class="container">
+            <div class="">
+                <div class="site-logo text-center py-4">
+                    <a href="#"><img src="./img/logoo.jpg" alt="logo"></a>
+                </div>
+                <div class="social text-center">
+                    <h5 class="text-uppercase">Follow me</h5>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <div class="copyrights text-center">
+                    <p class="para">
+                        Copyright ©2020 All rights reserved | This template is made  by
+                        <a href="#"><span style="color: var(--primary-color);">Angel Beshirov</span></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
     <script src="./js/jquery3.5.1.js"></script>
     <script src="./js/bootstrap.min.js"></script>
+    <script src="./vendor/isotope/isotope.min.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 </html>
