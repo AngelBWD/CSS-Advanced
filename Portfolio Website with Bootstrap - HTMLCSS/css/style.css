@@ -3,12 +3,12 @@
 @import url(./partials/_globle.css);
 
 /* start navigation */
-.header_area .main-menu .navbar .navbar-brand {
-    padding: 0 2rem 0 0rem;
+.header_area .main-menu .navbar .navbar-brand{
+    padding: 0 2rem 0 2rem;
 }
 
-.header_area .main-menu .navbar {
-    padding: 1rem 10rem;
+.header_area .main-menu .navbar{
+    padding: 1rem 5rem ;
 }
 
 .header_area .main-menu .nav-item .nav-link {
@@ -65,7 +65,7 @@
 
 /* start about area */
 .site-main .about-area {
-    padding: 8rem 5rem;
+    padding: 4rem 5rem;
 }
 
 .site-main .about-area .about-title h2>span {
@@ -119,6 +119,24 @@ footer .footer-area .social h5 {
 footer.footer-area .social a > i{
     font-size:22px;
     padding: 2rem;
-    color: var(--border-color);
+    color: gray;
 }
+
+footer.footer-area .social a:hover .fa-facebook {
+    color: blue;
+}
+
+footer.footer-area .social a:hover .fa-instagram {
+    color: #D42F6E;
+}
+
+footer.footer-area .social a:hover .fa-github {
+    color: #000;
+}
+
+footer.footer-area .social a:hover .fa-linkedin {
+    color: #0073B2;
+}
+
+
 /* start footer area */ 
